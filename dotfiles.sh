@@ -12,7 +12,7 @@ case "$1" in
   "install")
     #======= INSTALL PROCEDURE #======= 
     #create the projects file
-    mkdir $DIR
+    [ -d $DIR ] || mkdir $DIR
     cp -r * $DIR
 
 	#install the main script in .zsh only if it isn't already there
