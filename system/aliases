@@ -23,5 +23,7 @@ alias cp='cp -iv'
 alias mv='mv -iv'
 alias rm='rm -if'
 alias la='ls -alh'
-alias ff='find . -name '
 
+#utils
+alias ff='find . -name '
+alias rmbak='rm -rf *~;rm -rf *.bak'
