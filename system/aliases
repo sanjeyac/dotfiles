@@ -1,0 +1,9 @@
+#run a server on current folder
+alias server='python -m SimpleHTTPServer 8000'
+
+#configurate your server
+alias cloud='--@--'
+
+#remove all backup files
+alias rmbak='rm *~'
+
