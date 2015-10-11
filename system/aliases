@@ -3,6 +3,23 @@ alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
 
-
 # ===== Network =====
 alias ip='dig +short myip.opendns.com @resolver1.opendns.com'
+
+# ===== APT-GETs =====
+alias apti='sudo apt-get install'
+alias aptr='sudo apt-get remove'
+alias aptp='sudo apt-get purge'
+alias apts='sudo apt-cache search'
+alias aptup='sudo apt-get update'
+alias aptug='sudo apt-get upgrade'
+
+# ===== Utils =====
+alias afk='gnome-screensaver-command --lock' #lock screen
+alias server='python -m SimpleHTTPServer 9000' # serve current folder files on port 9000
+
+#prevent overwriting accidentally
+alias cp='cp -iv'
+alias mv='mv -iv'
+alias rm='rm -if'
+alias la='ls -alh'
