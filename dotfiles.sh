@@ -17,9 +17,11 @@ case "$1" in
     echo "source $ALIASES" >> $HOME/.zshrc
     
     #add aliases to bash
-    echo "if [ -f $ALIASES ]; then
-        . $ALIASES
-    fi" >> $HOME/.bashrc    
+    echo "
+if [ -f $ALIASES ]; then
+  . $ALIASES
+fi
+	" >> $HOME/.bashrc    
     ;;
 
   "update")
