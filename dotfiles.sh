@@ -3,6 +3,7 @@
 #locations
 DIR=$HOME/.dotfiles
 ALIASES=$DIR/system/aliases
+COMMONSH=$DIR/commonzsh
 
 #parse params
 case "$1" in
@@ -14,12 +15,12 @@ case "$1" in
     cp -r * $DIR
 
     #add aliases to zsh
-    echo "source $ALIASES" >> $HOME/.zshrc
+    echo "source $COMMONSH" >> $HOME/.zshrc
     
     #add aliases to bash
     echo "
-if [ -f $ALIASES ]; then
-  . $ALIASES
+if [ -f $COMMONSH ]; then
+  . $COMMONSH
 fi
 	" >> $HOME/.bashrc    
     ;;
