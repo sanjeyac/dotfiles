@@ -2,7 +2,7 @@
 DIR=$HOME/.dotfiles
 ALIASES=$DIR/system/aliases
 TOOLS=$DIR/tools
-FUNCITONS=$DIR/system/functions
+FUNCTIONS=$DIR/system/functions
 
 
 # Z frecent folder navigation
