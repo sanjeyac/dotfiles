@@ -1,9 +1,8 @@
-#run a server on current folder
-alias server='python -m SimpleHTTPServer 8000'
+# ===== Navigation ======
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
 
-#configurate your server
-alias cloud='--@--'
 
-#remove all backup files
-alias rmbak='rm *~'
-
+# ===== Network =====
+alias ip='dig +short myip.opendns.com @resolver1.opendns.com'
