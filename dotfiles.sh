@@ -4,6 +4,7 @@
 DIR=$HOME/.dotfiles
 ALIASES=$DIR/system/aliases
 COMMONSH=$DIR/commonzsh.sh
+SOLARIZE=$DIR/tools/solarized-gnome-terminal.sh
 
 #parse params
 case "$1" in
@@ -14,15 +15,11 @@ case "$1" in
     mkdir $DIR
     cp -r * $DIR
 
-    #add aliases to zsh
-    echo "source $COMMONSH" >> $HOME/.zshrc
-    
-    #add aliases to bash
-    echo "
-if [ -f $COMMONSH ]; then
-  . $COMMONSH
-fi
-	" >> $HOME/.bashrc    
+	#install the main script in .zsh only if it isn't already there
+	if ! grep -Fq "$COMMONSH" $HOME/.zshrc; then
+	    #add aliases to zsh
+	    echo "source $COMMONSH" >> $HOME/.zshrc
+	fi
     ;;
 
   "update")
@@ -30,6 +27,12 @@ fi
     git pull
     git update
     cp -r * $DIR
+    ;;
+
+
+  "solarize")
+    #======= GNOME TERMINAL SOLARIZE #======= 
+    sh $SOLARIZE
     ;;
 
 
