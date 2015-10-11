@@ -3,7 +3,7 @@
 #locations
 DIR=$HOME/.dotfiles
 ALIASES=$DIR/system/aliases
-COMMONSH=$DIR/commonzsh
+COMMONSH=$DIR/commonzsh.sh
 
 #parse params
 case "$1" in
