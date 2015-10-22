@@ -3,6 +3,5 @@
 sudo apt-get update
 sudo apt-get install zsh
 sudo apt-get install git-core
-curl -L http://install.ohmyz.sh > install.sh
-sh install.sh
+sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 sudo chsh -s $(which zsh) $(whoami)
