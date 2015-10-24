@@ -3,6 +3,7 @@
 clone the repository somewhere
 
 `git clone https://github.com/sanjeyac/dotfiles.git`
+
 `cd dotfiles`
 
 Replace bash with Zsh + OhMyZsh
