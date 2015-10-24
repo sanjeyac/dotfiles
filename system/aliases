@@ -27,3 +27,5 @@ alias la='ls -alh'
 #utils
 alias ff='find . -name '
 alias rmbak='rm -rf *~;rm -rf *.bak'
+
+alias speedtest='$HOME/.dotfiles/tools/speedtest-cli'
