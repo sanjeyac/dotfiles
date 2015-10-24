@@ -35,6 +35,18 @@ case "$1" in
     sh $SOLARIZE
     ;;
 
+  "tools")
+    cd tools
+    ./installtools.sh
+    cd ..
+    ;;
+
+  "zsh")
+    cd tools
+    ./installzsh.sh
+    cd ..
+    ;;
+
 
   *)
     #======= HELP MANUAL #======= 
