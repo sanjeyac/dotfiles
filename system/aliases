@@ -4,7 +4,7 @@ alias ...='cd ../..'
 alias ....='cd ../../..'
 
 # ===== Network =====
-alias ip='dig +short myip.opendns.com @resolver1.opendns.com'
+alias myip='dig +short myip.opendns.com @resolver1.opendns.com'
 
 # ===== APT-GETs =====
 alias apti='sudo apt-get install'
